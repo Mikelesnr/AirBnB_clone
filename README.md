@@ -1,1 +1,1 @@
-This is our first Airbnb clone version at Alx
+This is our first Airbnb clone version at Alx-Holberton
