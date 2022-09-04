@@ -8,15 +8,11 @@ class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb)"
 
     def do_quit(self, args):
-        """
-        quits the console
-        """
+        'quits the console'
         return True
 
     def do_EOF(self, args):
-        """
-        EOF
-        """
+        'EOF'
         return True
 
 
