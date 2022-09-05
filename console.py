@@ -25,7 +25,5 @@ class HBNBCommand(cmd.Cmd):
         return False
 
 
-console = HBNBCommand()
-
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
