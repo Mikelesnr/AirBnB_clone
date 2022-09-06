@@ -4,7 +4,14 @@ A module handling file storage engine of the application
 """
 
 import json
+import datetime
 from models.base_model import BaseModel
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
+from models.state import State
+from models.user import User
 
 
 class FileStorage:
@@ -37,7 +44,7 @@ class FileStorage:
             json_object[key] = self.__objects[key].to_dict()
 
         with open(self.__file_path, 'w') as f:
-            json.dump(json_object, f)
+            json.dump(json_object, f, indent=2)
 
     def reload(self):
         """
@@ -52,3 +59,16 @@ class FileStorage:
                     self.new(eval(obj["__class__"])(**obj))
         except FileNotFoundError:
             return
+
+    def classes(self):
+        """Returns a dictionary of a valid classes"""
+
+        classes = {
+            "BaseModel": BaseModel,
+            "Amenity": Amenity,
+            "City": City,
+            "Place": Place,
+            "State": State,
+            "User": User
+        }
+        return classes
