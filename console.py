@@ -13,8 +13,7 @@ class HBNBCommand(cmd.Cmd):
         return super().do_help(arg)
 
     def do_quit(self, args):
-        """
-        quits the console
+        """quits the console
         """
         return True
 
