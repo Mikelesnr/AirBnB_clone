@@ -6,6 +6,12 @@ from models import storage
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb)"
 
+    def do_help(self, arg):
+        """parses argument into superclass help function
+        to get information about the argument
+        """
+        return super().do_help(arg)
+
     def do_quit(self, args):
         """
         quits the console
