@@ -8,7 +8,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_help(self, arg):
         """parses argument into superclass help function
-        to get information about the argument
+        to get information about the argument.
         """
         return super().do_help(arg)
 
