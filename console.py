@@ -3,6 +3,7 @@
 It defines one class, `HBNBCommand(),
 which sub-classes the `Cmd()` class.`
 """
+
 import cmd
 from models import storage
 
