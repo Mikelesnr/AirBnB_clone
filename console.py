@@ -26,6 +26,10 @@ class HBNBCommand(cmd.Cmd):
         """
         return True
 
+    def emptyline(self):
+        """Neglects an empty line"""
+        pass
+
     def do_create(self, argument):
         """create Creates new instance of class, saves it and prints the id
         """
