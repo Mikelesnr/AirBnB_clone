@@ -8,6 +8,8 @@ from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
+    """HBNBCommand class inheriting the Cmd class
+    """
     prompt = "(hbnb)"
 
     def do_help(self, arg):
