@@ -16,19 +16,19 @@ class HBNBCommand(cmd.Cmd):
         """
         return super().do_help(arg)
 
-    def do_quit(self, args):
+    def do_quit(self, argument):
         """Quit command to exit the program
         """
         return True
 
-    def do_EOF(self, args):
+    def do_EOF(self, argument):
         """EOF command to exit the program
         """
         return True
 
     def emptyline(self):
         """Neglects an empty line"""
-        pass
+        return
 
     def do_create(self, argument):
         """create Creates new instance of class, saves it and prints the id
