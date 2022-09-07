@@ -69,6 +69,7 @@ class FileStorage:
             "City": City,
             "Place": Place,
             "State": State,
-            "User": User
+            "User": User,
+            "Review": Review
         }
         return classes

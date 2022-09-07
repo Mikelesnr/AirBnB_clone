@@ -10,5 +10,21 @@
     "created_at": "2022-09-06T22:42:50.559292",
     "updated_at": "2022-09-06T22:42:50.559337",
     "__class__": "User"
+  },
+  "BaseModel.ca490036-fb32-47bb-9181-3e4314304e4f": {
+    "id": "ca490036-fb32-47bb-9181-3e4314304e4f",
+    "created_at": "2022-09-07T06:09:37.570696",
+    "updated_at": "2022-09-07T06:09:37.570753",
+    "test_name": "test",
+    "number": 9238,
+    "name": "New",
+    "num": "84.75",
+    "__class__": "BaseModel"
+  },
+  "Review.f0bb118c-b6ed-4839-ade8-575b2d1ffd14": {
+    "id": "f0bb118c-b6ed-4839-ade8-575b2d1ffd14",
+    "created_at": "2022-09-07T06:59:24.523590",
+    "updated_at": "2022-09-07T06:59:24.523628",
+    "__class__": "Review"
   }
 }

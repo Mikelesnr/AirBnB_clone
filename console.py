@@ -13,18 +13,18 @@ class HBNBCommand(cmd.Cmd):
         return super().do_help(arg)
 
     def do_quit(self, args):
-        """quits the console
+        """Quit command to exit the program
         """
         return True
 
     def do_EOF(self, args):
-        """
-        EOF
+        """EOF command to exit the program
         """
         return True
 
     def do_create(self, argument):
-        """create Creates new instance of class, saves it and prints the id"""
+        """create Creates new instance of class, saves it and prints the id
+        """
         args = argument.split()
         if self.ValidArgs(args, False, False):
             created_obj = storage.classes()[args[0]]()
@@ -90,9 +90,11 @@ class HBNBCommand(cmd.Cmd):
             obj = storage.all()[key]
             args[3] = args[3].strip('"')
             if args[3].isdigit():
-                args[3] = int(args[3])
-            else:
                 args[3] = float(args[3])
+                if args[3].is_integer():
+                    args[3] = int(args[3])
+                else:
+                    args[3]
             setattr(obj, args[2], args[3])
             storage.save()
 
